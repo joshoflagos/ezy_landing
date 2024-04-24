@@ -84,7 +84,7 @@
 					</button>
 					<div
 						class="flex items-center justify-center space-x-3 mt-5 md:mt-0 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
-						<button class="bg-white w-14 h-14 rounded-full flex items-center justify-center">
+						<button id="landingVideoModal" class="bg-white w-14 h-14 rounded-full flex items-center justify-center">
 							<svg class="w-5 h-5 ml-2" viewBox="0 0 24 28" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -93,6 +93,20 @@
 							</svg>
 						</button>
 						<span class="cursor-pointer">Watch how it works</span>
+					</div>
+					<!-- Video Modal-->
+					<div id="landingVideoModal" class="modal">
+					
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<div class="aspect-w-16 aspect-h-9">
+								<iframe src="https://www.youtube.com/embed/xkVlGYgWkks" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							</div>
+						</div>
+					
 					</div>
 				</div>
 			</div>
@@ -618,6 +632,33 @@
 
 		// Insert the current year into the footer
 		document.getElementById('currentYear').innerText = currentYear;
+	</script>
+	// Get the modal
+	<script>
+	var modal = document.getElementById("landingVideoModal");
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById("landingVideoModal");
+	
+	// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+	
+		// When the user clicks on the button, open the modal
+		btn.onclick = function() {
+		modal.style.display = "block";
+		}
+	
+		// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			modal.style.display = "none";
+			}
+	
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+			}
 	</script>
 </body>
 
