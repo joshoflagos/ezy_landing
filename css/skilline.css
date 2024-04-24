@@ -199,3 +199,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+#videoPlayer {
+    width: 100%;
+    height: auto;
+}
