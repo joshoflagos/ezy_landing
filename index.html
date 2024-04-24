@@ -315,6 +315,7 @@
 				</div>
 				<img class="rounded-xl z-40 relative" src="img/regularhailexperience.png" alt="">
 				<button
+				id="landingVideoModalBtn2"
 					class="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none  transition hover:scale-110 duration-300 ease-in-out z-50">
 					<svg class="w-5 h-5 ml-1" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -322,6 +323,17 @@
 							fill="#23BDEE" />
 					</svg>
 				</button>
+				<div id="landingVideoModal2" class="modal">
+					
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="aspect-w-16 aspect-h-9">
+							<video class="w-full h-full" src="./img/driver.mp4" controls></video>
+						</div>
+					</div>
+				
+				</div>
 				<div class="bg-yellow-500 w-40 h-40 floating absolute rounded-lg z-10 -bottom-3 -right-3"></div>
 			</div>
 		</div>
@@ -656,6 +668,33 @@
 			window.onclick = function(event) {
 			if (event.target == modal) {
 			modal.style.display = "none";
+			}
+			}
+
+
+
+			var modal2 = document.getElementById("landingVideoModal2");
+	
+	// Get the button that opens the modal
+	var btn2 = document.getElementById("landingVideoModalBtn2");
+	
+	// Get the <span> element that closes the modal
+		var span2 = document.getElementsByClassName("close")[0];
+	
+		// When the user clicks on the button, open the modal
+		btn2.onclick = function() {
+		modal2.style.display = "block";
+		}
+	
+		// When the user clicks on <span> (x), close the modal
+			span2.onclick = function() {
+			modal2.style.display = "none";
+			}
+	
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			if (event.target == modal2) {
+			modal2.style.display = "none";
 			}
 			}
 	</script>

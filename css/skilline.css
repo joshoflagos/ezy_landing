@@ -134,10 +134,12 @@ body {
     }
 
 
+    
+
         /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: auto;
     /* 6% from the top and centered */
     padding: 4px;
     border: 1px solid #888;
