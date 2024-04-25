@@ -23,18 +23,15 @@
 
 <body class="antialiased">
 	<!-- navbar -->
-	<div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
+	<div x-data="{ open: false }" class="w-full pb-2 text-gray-700 bg-white fixed top-0 z-50 shadow-md">
 		<div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-			<div class="flex flex-row items-center justify-between py-6">
+			<div class="flex flex-row items-center justify-between py-2">
 				<div class="relative md:mt-8">
 					<a href="#"
-						class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Ezyride</a>
-					<svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
-							fill="#02e812" />
-					</svg>
+						class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">
+					<img alt="logo" src="img/logo.png" class="h-10 my-auto"/>
+					</a>
+				
 				</div>
 				<button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
 					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -64,7 +61,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="bg-cream">
+	<div class="bg-cream pt-24">
 		<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
 			<!--Left Col-->
 			<div
@@ -342,7 +339,7 @@
 		<div class="sm:flex items-center sm:space-x-8 mt-36">
 			<div data-aos="fade-right" class="sm:w-1/2 relative">
 				<div class="bg-yellow-500 rounded-full absolute w-12 h-12 z-0 -left-4 -top-3 animate-pulse"></div>
-				<h1 class="font-semibold text-2xl relative z-50 text-darken lg:pr-10">Everything you can do in a typical
+				<h1 class="font-semibold text-2xl relative z-40 text-darken lg:pr-10">Everything you can do in a typical
 					ride hailing platform, <span class="text-yellow-500">you can do with Ezyride</span></h1>
 				<p class="py-5 lg:pr-32">Except that Ezyride provides more KYC scrutiny on drivers to guarantee better
 					security for airport passengers.</p>
@@ -353,7 +350,7 @@
 				</div>
 				<img class="rounded-xl z-40 relative" src="img/regularhailexperience.png" alt="">
 				<button id="landingVideoModalBtn2"
-					class="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none  transition hover:scale-110 duration-300 ease-in-out z-50">
+					class="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none  transition hover:scale-110 duration-300 ease-in-out z-40">
 					<svg class="w-5 h-5 ml-1" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M22.5751 12.8097C23.2212 13.1983 23.2212 14.135 22.5751 14.5236L1.51538 27.1891C0.848878 27.5899 5.91205e-07 27.1099 6.25202e-07 26.3321L1.73245e-06 1.00123C1.76645e-06 0.223477 0.848877 -0.256572 1.51538 0.14427L22.5751 12.8097Z"
@@ -381,7 +378,7 @@
 					class="w-32 h-32 rounded-full absolute z-0 left-4 -top-12 animate-pulse"></div>
 				<div style="background: #33D9EF;"
 					class="w-5 h-5 rounded-full absolute z-0 left-36 -top-12 animate-ping"></div>
-				<img class="relative z-50 floating" src="img/userinterfaces.png" alt="">
+				<img class="relative z-40 floating" src="img/userinterfaces.png" alt="">
 				<div style="background: #5B61EB;"
 					class="w-36 h-36 rounded-full absolute z-0 right-16 -bottom-1 animate-pulse"></div>
 				<div style="background: #F56666;"
@@ -640,7 +637,7 @@
 			<div class="footer">
 				<div class="relative md:mt-8">
 					<a href="#"
-						class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Ezyride</a>
+						class="text-lg relative z-40 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Ezyride</a>
 					<!-- <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
